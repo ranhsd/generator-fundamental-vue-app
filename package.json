@@ -1,0 +1,23 @@
+{
+  "name": "generator-fundamental-vue-app",
+  "version": "0.0.2",
+  "description": "Yeoman generator for a web application using fundamental-vue UI library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "generator",
+    "yeoman-generator",
+    "fundamental-vue",
+    "fiori",
+    "sap-fiori"
+  ],
+  "author": "Ran Hassid",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "yeoman-generator": "^4.12.0",
+    "yosay": "^2.0.2"
+  }
+}
