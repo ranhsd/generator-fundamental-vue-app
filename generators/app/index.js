@@ -12,6 +12,11 @@ module.exports = class extends Generator {
         message: "Enter the project name",
       },
       {
+        name: "appTitle",
+        type: "input",
+        message: "Enter the app title",
+      },
+      {
         name: "description",
         type: "input",
         message: "Enter the app description",
@@ -46,7 +51,9 @@ module.exports = class extends Generator {
       this.destinationPath("postcss.config.js")
     );
 
-    this.fs.copyTpl(this.templatePath("src"), this.destinationPath("src"));
+    this.fs.copyTpl(this.templatePath("src"), this.destinationPath("src"), {
+      appTitle: this.answers.appTitle,
+    });
 
     this.fs.copyTpl(
       this.templatePath("public"),

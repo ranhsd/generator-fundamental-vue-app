@@ -5,7 +5,7 @@
         class="w-20 h-20 align-middle"
         :src=logo
       />
-      <fd-shell-bar-product-title>Graph</fd-shell-bar-product-title>
+      <fd-shell-bar-product-title><%= appTitle %></fd-shell-bar-product-title>
     </fd-shell-bar-group>
     <fd-shell-bar-group position="end">
       <fd-shell-bar-actions>
